@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruang Rona – Setiap Bunga Punya Cerita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar" id="navbar">
+  <a href="#home" class="logo" id="logo"></a>
+  <nav id="menu">
+    <a href="#home" class="aktif">Home</a>
+    <a href="#product">Product</a>
+    <a href="#deal">Pages</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="ikon">
+    <button class="tombol-ikon gelap" aria-label="Cari">&#9740;</button>
+    <button class="tombol-ikon" aria-label="Wishlist">&#9825;</button>
+    <button class="tombol-ikon" aria-label="Keranjang">&#128722;<b id="jumlahKeranjang">0</b></button>
+    <button class="tombol-ikon burger" id="burger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="kelopak" id="kelopak"></div>
+    <div class="hero-teks">
+      <p class="tag">Flowers &amp; little thingss</p>
+      <h1>Setiap Bunga Punya Cerita</h1>
+      <p class="sub">Satu bunga terlihat sederhana, tapi akan membawa seribu rasa. Temukan Bouquet istimewa untuk menyampaikan perasaa yang tak selalu bisa diungkapan.</p>
+      <a href="#product" class="btn">Explore Our Product</a>
+    </div>
+    <div class="hero-gambar" id="heroGambar"></div>
+  </section>
+
+  <section class="keunggulan" id="keunggulan">
+    <div class="perk"><span class="emoji">&#128717;</span><div><b>Thoughtful Gifts</b><small>Buqouet penuh makna untuk orang yang bermakna</small></div></div>
+    <div class="perk"><span class="emoji">&#128666;</span><div><b>Free Delivery</b><small>Your favorite bouquet,delivered for free!</small></div></div>
+    <div class="perk"><span class="emoji">&#127873;</span><div><b>Made with Love</b><small>Setiap rangkaian terbuat dari cinta dan kasih</small></div></div>
+  </section>
+  <div class="berjalan">
+    <div><span>Fresh flowers &#10047;</span><span>Same day delivery &#10047;</span><span>Handmade bouquet &#10047;</span><span>Free shipping &#10047;</span><span>Setiap bunga punya cerita &#10047;</span><span>Fresh flowers &#10047;</span><span>Same day delivery &#10047;</span><span>Handmade bouquet &#10047;</span><span>Free shipping &#10047;</span><span>Setiap bunga punya cerita &#10047;</span></div>
+  </div>
+
+  <section class="blok" id="product">
+    <p class="judul-kecil">Products</p>
+    <h2>This month’s top selling <em>Product</em></h2>
+    <div class="tiga" id="produkTerlaris"></div>
+  </section>
+
+  <section class="blok" id="deal">
+    <p class="judul-kecil">Offers</p>
+    <h2>Deal of the day</h2>
+    <div class="hitung" id="hitung"></div>
+    <div class="tiga deal-list" id="daftarDeal"></div>
+  </section>
+
+  <section class="blok" id="why">
+    <p class="judul-kecil">Products</p>
+    <h2>Why choose <em>Our Flowers</em></h2>
+    <div class="why">
+      <div class="alasan kuning kiri"><b>Long-Langsing Beauty</b><span>Kenangan manis untuk kenangan yang abadi</span></div>
+      <div class="alasan merah kiri"><b>Premium Quality</b><span>Terjamin kualiatasnya untuk menghasilkan susunan rasa kasih</span></div>
+      <div class="alasan peach kiri"><b>Made Just For You</b><span>Bebas pilih warna, jenis bunga, dan wrapping sesuai keinginan</span></div>
+      <div class="alasan kuning kanan"><b>Thoughtfully Arranged</b><span>Setiap bunga dirangkai dengan teliti, dengan detail kecil yang bikin hadiahmu lebih spesial</span></div>
+      <div class="alasan merah kanan"><b>Flowers for Every Moment</b><span>Setiap Moment berharga kami siap ikut serta meranyakannya</span></div>
+      <div class="alasan peach kanan"><b>Wall hanging flower/ bouquet</b><span>Lorem ipsum dolor sit amet consectetur. Posuere dolor commodo.</span></div>
+      <div class="tengah" id="bungaTengah"></div>
+    </div>
+  </section>
+
+  <section class="blok" id="gallery">
+    <p class="judul-kecil">Collection</p>
+    <h2>Our Best <em>Collections</em></h2>
+    <div class="slider" id="slider"></div>
+    <div class="titik" id="titik"></div>
+  </section>
+
+  <section class="blok testi" id="testi">
+    <p class="judul-kecil">Testimonials</p>
+    <h2>What our <em>Clients Say</em></h2>
+    <blockquote id="kotakTesti"></blockquote>
+  </section>
+  <section class="blok" id="form-pesan">
+    <p class="judul-kecil">Form</p>
+    <h2>Isi <em>Data Pemesan</em></h2>
+    <form class="form-pesan" id="formPesan" novalidate>
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap">
+        <div class="invalid-feedback"></div>
+      </div>
+      <div class="mb-3">
+        <label for="alamat" class="form-label">Alamat</label>
+        <textarea class="form-control" id="alamat" rows="3" placeholder="Alamat pengiriman bunga"></textarea>
+        <div class="invalid-feedback"></div>
+      </div>
+      <div class="mb-3">
+        <label for="kota" class="form-label">Kota</label>
+        <select class="form-select" id="kota">
+          <option value="" selected>Pilih kota</option>
+          <option value="Semarang">Semarang</option>
+          <option value="Kudus">Kudus</option>
+          <option value="Demak">Demak</option>
+          <option value="Pekalongan">Pekalongan</option>
+          <option value="Tegal">Tegal</option>
+          <option value="Surabaya">Surabaya</option>
+          <option value="Jakarta">Jakarta</option>
+        </select>
+        <div class="invalid-feedback"></div>
+      </div>
+      <div class="mb-4">
+        <p class="form-label">Hobi</p>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hobi1" value="Membaca">
+          <label class="form-check-label" for="hobi1">Membaca</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hobi2" value="Koding">
+          <label class="form-check-label" for="hobi2">Koding</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hobi3" value="Berenang">
+          <label class="form-check-label" for="hobi3">Berenang</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="hobi4" value="Menggambar">
+          <label class="form-check-label" for="hobi4">Menggambar</label>
+        </div>
+      </div>
+      <button type="submit" class="kirim">Kirim Data</button>
+    </form>
+    <div class="hasil-form" id="hasilForm" role="status"></div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="foot-grid">
+    <div>
+      <div class="logo" id="logoFooter"></div>
+      <p>Setiap moment merupakan kenangan berharga. Kenangan penuh kasih dan kehangatan.</p>
+      <div class="sosmed"><span>ig</span><span>yt</span><span>in</span><span>fb</span></div>
+    </div>
+    <div><h4>Home</h4><a href="#product">Product</a><a href="#deal">Pages</a><a href="#">Blog</a><a href="#contact">Contact</a></div>
+    <div><h4>Products</h4><a href="#">Sweet Bouquets</a><a href="#">Gradution Flowers</a><a href="#">Graduation Board</a><a href="#">Custom Bouquet</a></div>
+    <div><h4>Payment Method</h4><a href="#">E-Wallet</a><a href="#">Bank Transfer</a><a href="#">Cash On Delivery</a></div>
+    <div><h4>Get Online</h4><a class="toko" href="#">&#9654; Google Play</a><a class="toko" href="#">App Store</a></div>
+  </div>
+  <div class="hak-cipta"><span>© 2024 all right reserved by bkalpdesign</span><a href="#">Design By-RuangRona</a></div>
+  <div class="identitas"><span>Nama : Inayatul Isyayana</span><span>NIM : A12.2025.07412</span></div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
